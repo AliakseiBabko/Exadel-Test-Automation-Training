@@ -1,0 +1,1 @@
+"myPromises" is not an array,"screenshot" is not null,"elementText" is not a string,"config" is not equal "Common","const" is not equal "FiRst" (case insensitive)
