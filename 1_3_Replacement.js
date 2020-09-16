@@ -15,7 +15,7 @@ function Replacement (text, position, character) {
     console.log(newText);
 }
 
-function ReplaceChar (newText, i, character) {
+function replaceChar (newText, i, character) {
     let firstPart = newText.substr(0, i);
     let lastPart = newText.substr(i + 1);
     return firstPart + character + lastPart;
