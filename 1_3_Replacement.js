@@ -3,9 +3,9 @@ function Replacement (text, position, character) {
     let currentPosition = 0; //a marker to indicate the current position in a word  
     const textLength = newText.length; //to prevent counting text length each time
     for (let i = 0; i <= textLength; i++) {
-        if (newText.charAt(i) == ' ') {
+        if (newText.charAt(i) === ' ') {
             currentPosition = 0;  //reset counter when we reached a space
-        } else if (currentPosition == position - 1) {
+        } else if (currentPosition === position - 1) {
             newText = replaceChar (newText, i, character); //replace character in the given position 
             currentPosition++;
         } else {
