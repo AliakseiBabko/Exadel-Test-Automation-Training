@@ -6,7 +6,7 @@ fs.readFile('1.json', 'utf8', function (err,data) {
   }
 
   const myObj = JSON.parse(data); //parse received json into an object
-  let errorlog = []; //create an array for report (to be saved as json)
+  let errorlog = []; //create an array for report
   
   //check conditions
   if (typeof(myObj.flag) !== 'boolean') {
