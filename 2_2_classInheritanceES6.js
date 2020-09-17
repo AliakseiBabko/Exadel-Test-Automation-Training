@@ -1,6 +1,6 @@
 'use strict';
 
-class motorVehicle {
+class MotorVehicle {
     constructor(name) {
         this.name = name;
         this.kind = 'motorVehicle';
@@ -9,17 +9,17 @@ class motorVehicle {
         console.log(this.name);
     }
     drive() {
-        console.log(this.name + ' is driving.')
+        console.log(this.name + ' is driving.');
     }
 }
 
-class PassengerVehicle extends motorVehicle {
+class PassengerVehicle extends MotorVehicle {
     constructor(name) {
         super(name);
         this.kind = 'passengerVehicle';
     }
     takePassengers(){
-        console.log(this.name + ' is taking pasengers.')
+        console.log(this.name + ' is taking pasengers.');
     }
 }
 
