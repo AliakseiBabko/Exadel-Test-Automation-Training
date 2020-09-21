@@ -23,12 +23,12 @@ setTimeout(
  
 // Rename a .csv to a new name 
 setTimeout( 
-  () => fs.renameSync('2_3_MockData/MOCK_DATA3_7.csv',
-  '2_3_MockData/MOCK_DATA3_6.csv'), 2000
+  () => fs.renameSync('2_3_MockData/MOCK_DATA3_6.csv',
+  '2_3_MockData/MOCK_DATA3_5.csv'), 2000
 );
 
 // Rename a .txt to a new name 
   setTimeout( 
-  () => fs.renameSync('2_3_MockData/MOCK_DATA4.txt',  
-  '2_3_MockData/MOCK_DATA3.txt'), 3000
+  () => fs.renameSync('2_3_MockData/MOCK_DATA3.txt',  
+  '2_3_MockData/MOCK_DATA2.txt'), 3000
 );
