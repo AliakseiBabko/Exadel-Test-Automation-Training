@@ -1,11 +1,13 @@
 fs = require('fs');
-const json2xls = require('./node_modules/json2xls/lib/json2xls.js');
+//@ts-ignore
+const json2xls = require('json2xls');
 
-fs.readFile('JSON_to_xlsx.json', 'utf8', function (err,data) {
+fs.readFile('new5.json', 'utf8', function (err,data) {
     if (err) {
         return console.log(err);
     }
-    const xls = json2xls(data);
+    const myObj = JSON.parse(data); //parse received json into an object
+    const xls = json2xls(myObj); //convert the file into xlsx file
     fs.writeFileSync('data.xlsx', xls, 'binary', function (err) {
         if (err) throw err;
     });

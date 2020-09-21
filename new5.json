@@ -1,0 +1,10 @@
+{
+	"level0": ["servlet","servlet-mapping","taglib"],
+	"level1": [{"servlet-name": "cofaxAdmin","servlet-class":"org.cofax.cds.AdminServlet"},{"servlet-name":"fileServlet","servlet-class":"org.cofax.cds.FileServlet"}],
+	"level2": {
+    "cofaxCDS": "/",
+    "cofaxEmail": "/cofaxutil/aemail/*",
+    "cofaxAdmin": "/admin/*",
+    "fileServlet": "/static/*",
+    "cofaxTools": "/tools/*"}
+}
